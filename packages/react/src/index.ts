@@ -1,1 +1,3 @@
-export * from './components/Button'
+import { colors } from '@gen-ui/tokens'
+
+console.log(colors)
