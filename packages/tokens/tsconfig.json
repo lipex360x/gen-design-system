@@ -1,0 +1,4 @@
+{
+  "extends": "@gen-ui/typescript/base.json",
+  "include": ["src"]
+}
