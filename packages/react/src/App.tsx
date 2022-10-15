@@ -1,5 +1,3 @@
 export const App = () => {
-  return (
-   <>App</>
-  )
+  return <>App</>
 }
