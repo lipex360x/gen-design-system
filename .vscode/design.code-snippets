@@ -1,0 +1,18 @@
+{
+	"React Function Component": {
+		"prefix": "rfce",
+		"body": [
+			"import * as S from './styles'",
+			"",
+			"export const $TM_FILENAME_BASE = () => {",
+			"  return (",
+			"    <S.Wrapper>",
+			"      <div>$TM_FILENAME_BASE</div>",
+			"    </S.Wrapper>",
+			"  )",
+			"}",
+			""
+		]
+	},
+	
+}
