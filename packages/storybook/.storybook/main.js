@@ -1,19 +1,23 @@
 module.exports = {
-  "stories": [
+  stories: [
     "../src/pages/**/*.stories.mdx",
     "../src/stories/**/*.stories.tsx"
   ],
-  "addons": [
+
+  addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
-    "@storybook/addon-interactions",
-    "@react-theming/storybook-addon"
+    "@storybook/addon-interactions"
   ],
-  "framework": "@storybook/react",
-  "core": {
-    "builder": "@storybook/builder-vite"
+
+  framework: "@storybook/react",
+  
+  core: {
+    builder: 'webpack5'
   },
-  "features": {
-    "storyStoreV7": false
+
+  webpackFinal: (config) => {
+    config.resolve.modules.push(`${process.cwd()}/src`)
+    return config
   }
 }

@@ -1,10 +1,6 @@
-import { addDecorator } from '@storybook/react';
+import { ThemeProvider } from 'styled-components'
 import { themes } from '@storybook/theming'
-import { withThemes } from '@react-theming/storybook-addon';
-import { ThemeProvider } from "styled-components";
 import { theme } from '@gen-ui/react'
-
-addDecorator(withThemes(ThemeProvider, [theme]));
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -19,3 +15,11 @@ export const parameters = {
     theme: themes.dark
   }
 }
+
+export const decorators = [
+  (Story) => (
+    <ThemeProvider theme={theme}>
+      <Story />
+    </ThemeProvider>
+  )
+]

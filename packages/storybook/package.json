@@ -1,26 +1,26 @@
 {
-  "name": "@gen-ui/storybook",
+  "name": "sb",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.19.3",
     "@gen-ui/eslint-config": "*",
-    "@gen-ui/typescript": "*",
     "@gen-ui/react": "*",
     "@gen-ui/tokens": "*",
-
-    "@babel/core": "^7.19.3",
-    "@react-theming/storybook-addon": "^1.1.7",
+    "@gen-ui/typescript": "*",
     "@storybook/addon-actions": "^6.5.12",
     "@storybook/addon-essentials": "^6.5.12",
     "@storybook/addon-interactions": "^6.5.12",
     "@storybook/addon-links": "^6.5.12",
-    "@storybook/builder-vite": "^0.2.4",
+    "@storybook/builder-webpack4": "^6.5.12",
+    "@storybook/builder-webpack5": "^6.5.12",
+    "@storybook/manager-webpack4": "^6.5.12",
+    "@storybook/manager-webpack5": "^6.5.12",
     "@storybook/react": "^6.5.12",
     "@storybook/testing-library": "^0.0.13",
-    "@vitejs/plugin-react": "^2.1.0",
     "babel-loader": "^8.2.5",
-    "vite": "^3.1.8"
+    "webpack": "^5.74.0"
   },
   "dependencies": {
     "polished": "^4.2.2",
@@ -29,7 +29,6 @@
   },
   "scripts": {
     "dev": "start-storybook -p 6006",
-    "build": "build-storybook",
-    "lint": "eslint src --ext .ts,.tsx --fix"
+    "build": "build-storybook"
   }
 }
