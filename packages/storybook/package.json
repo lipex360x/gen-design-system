@@ -4,11 +4,11 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.19.3",
     "@gen-ui/eslint-config": "*",
     "@gen-ui/react": "*",
     "@gen-ui/tokens": "*",
-    
-    "@babel/core": "^7.19.3",
+    "@react-theming/storybook-addon": "^1.1.7",
     "@storybook/addon-actions": "^6.5.12",
     "@storybook/addon-essentials": "^6.5.12",
     "@storybook/addon-interactions": "^6.5.12",

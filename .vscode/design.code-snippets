@@ -14,5 +14,25 @@
 			""
 		]
 	},
+
+	"Component Styles": {
+		"prefix": "rfst",
+		"body": [
+			"import styled, { css } from 'styled-components'",
+			"",
+			"export const Wrapper = styled.div`",
+			"  ${({ theme }) => css``}",
+			"`",
+			"",
+		]
+	},
+
+	"Component Index": {
+		"prefix": "rfex",
+		"body": [
+			"export {} from './'",
+			"",
+		]
+	},
 	
 }
