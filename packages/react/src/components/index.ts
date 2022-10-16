@@ -1,3 +1,4 @@
+export * from './Avatar'
 export * from './Container'
 export * from './Button'
 export * from './Heading'
