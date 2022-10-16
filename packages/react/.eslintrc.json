@@ -1,3 +1,7 @@
 {
-  "extends": "@gen-ui/eslint-config"
+  "extends": "@gen-ui/eslint-config",
+
+  "rules": {
+    "no-undef": "off"
+  }
 }

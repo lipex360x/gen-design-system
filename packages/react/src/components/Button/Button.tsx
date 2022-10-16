@@ -1,11 +1,29 @@
-import { ReactNode } from 'react'
+import {
+  ElementType,
+  ButtonHTMLAttributes,
+  ForwardRefRenderFunction,
+  AnchorHTMLAttributes,
+} from 'react'
+
 import * as S from './styles'
 
-export type ButtonProps = {
-  children: ReactNode
-  size: 'small' | 'big'
-}
+type ButtonsTypes =
+  | AnchorHTMLAttributes<HTMLAnchorElement>
+  | ButtonHTMLAttributes<HTMLButtonElement>
 
-export const Button = ({ children, size = 'small' }: ButtonProps) => {
-  return <S.Wrapper size={size}>{children}</S.Wrapper>
-}
+export type ButtonProps = {
+  variant?: 'primary' | 'secondary' | 'tertiary'
+  size?: 'sm' | 'md' | 'lg'
+  as?: ElementType
+} & ButtonsTypes
+
+export const Button: ForwardRefRenderFunction<S.WrapperProps, ButtonProps> = ({
+  children,
+  variant = 'primary',
+  size = 'md',
+  ...props
+}: ButtonProps) => (
+  <S.Wrapper variant={variant} size={size} {...props}>
+    {children}
+  </S.Wrapper>
+)
