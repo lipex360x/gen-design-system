@@ -3,8 +3,9 @@ import { Button, ButtonProps } from '@gen-ui/react'
 import { ArrowRight } from 'phosphor-react'
 
 export default {
-  title: 'Button',
+  title: 'Form/Button',
   component: Button,
+
   args: {
     children: 'Send',
   },
@@ -18,12 +19,14 @@ export const Default: StoryObj<ButtonProps> = {
         options: ['primary', 'secondary', 'tertiary'],
       },
     },
+
     size: {
       control: {
         type: 'select',
         options: ['sm', 'md', 'lg'],
       },
     },
+
     disabled: {
       control: {
         type: 'select',
@@ -37,6 +40,7 @@ export const Variants: StoryObj<ButtonProps> = {
   args: {
     variant: 'primary',
   },
+
   argTypes: {
     variant: {
       control: {
@@ -51,6 +55,7 @@ export const Sizes: StoryObj<ButtonProps> = {
   args: {
     size: 'md',
   },
+
   argTypes: {
     size: {
       control: {
@@ -83,6 +88,7 @@ export const Disabled: StoryObj<ButtonProps> = {
     variant: 'primary',
     disabled: true,
   },
+
   argTypes: {
     variant: {
       control: {
