@@ -1,11 +1,17 @@
 import * as S from './styles'
+import { fontSizes } from '@gen-ui/tokens'
+import { ElementType, ReactNode } from 'react'
 
-export type TextProps = {}
+export type TextProps = {
+  children: ReactNode
+  size: keyof typeof fontSizes
+  as?: ElementType
+}
 
-export const Text = () => {
+export const Text = ({ children, size, as = 'p' }: TextProps) => {
   return (
-    <S.Wrapper>
-      <span>Hello Text</span>
-    </S.Wrapper>
+    <S.Text size={size} as={as}>
+      {children}
+    </S.Text>
   )
 }

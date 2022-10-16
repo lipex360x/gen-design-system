@@ -1,12 +1,34 @@
 import type { StoryObj, Meta } from '@storybook/react'
-import { Text, TextProps } from '@gen-ui/react'
+
+import { Text } from '@gen-ui/react'
+import { fontSizes } from '@gen-ui/tokens'
 
 export default {
-  title: 'Text',
+  title: 'Typography/Text',
   component: Text,
   args: {
-    children: 'Hello Text',
+    children: 'Lorem, ipsum dolor.',
+    size: 'md',
+  },
+
+  argTypes: {
+    children: {
+      type: 'string',
+    },
+    size: {
+      control: {
+        type: 'select',
+        options: Object.entries(fontSizes).map(([key]) => key),
+      },
+    },
   },
 } as Meta
 
-export const Primary: StoryObj<TextProps> = {}
+export const Primary: StoryObj = {}
+
+export const CustomTag: StoryObj = {
+  args: {
+    children: 'Strong text',
+    as: 'strong',
+  },
+}
