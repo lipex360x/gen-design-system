@@ -1,4 +1,5 @@
 import { addDecorator } from '@storybook/react';
+import { themes } from '@storybook/theming'
 import { withThemes } from '@react-theming/storybook-addon';
 import { ThemeProvider } from "styled-components";
 
@@ -13,4 +14,8 @@ export const parameters = {
       date: /Date$/,
     },
   },
+
+  docs: {
+    theme: themes.dark
+  }
 }
