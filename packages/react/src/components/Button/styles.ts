@@ -14,8 +14,6 @@ const sizes = {
   md: (theme: DefaultTheme) => css`
     height: 46px;
   `,
-
-  lg: (theme: DefaultTheme) => css``,
 }
 
 const variants = {
@@ -84,7 +82,7 @@ export const ButtonBase = styled.button`
   `}
 `
 
-export const Wrapper = styled(ButtonBase)<WrapperProps>`
+export const Container = styled(ButtonBase)<WrapperProps>`
   ${({ theme, size, variant }) => css`
     ${variant && variants[variant](theme)}
     ${size && sizes[size](theme)}

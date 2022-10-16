@@ -13,7 +13,7 @@ type ButtonsTypes =
 
 export type ButtonProps = {
   variant?: 'primary' | 'secondary' | 'tertiary'
-  size?: 'sm' | 'md' | 'lg'
+  size?: 'sm' | 'md'
   as?: ElementType
 } & ButtonsTypes
 
@@ -23,7 +23,7 @@ export const Button: ForwardRefRenderFunction<S.WrapperProps, ButtonProps> = ({
   size = 'md',
   ...props
 }: ButtonProps) => (
-  <S.Wrapper variant={variant} size={size} {...props}>
+  <S.Container variant={variant} size={size} {...props}>
     {children}
-  </S.Wrapper>
+  </S.Container>
 )

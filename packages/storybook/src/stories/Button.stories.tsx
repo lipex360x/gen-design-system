@@ -23,7 +23,7 @@ export const Default: StoryObj<ButtonProps> = {
     size: {
       control: {
         type: 'select',
-        options: ['sm', 'md', 'lg'],
+        options: ['sm', 'md'],
       },
     },
 
@@ -60,7 +60,7 @@ export const Sizes: StoryObj<ButtonProps> = {
     size: {
       control: {
         type: 'select',
-        options: ['sm', 'md', 'lg'],
+        options: ['sm', 'md'],
       },
     },
   },
