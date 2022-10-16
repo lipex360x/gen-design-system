@@ -4,11 +4,11 @@ import { ElementType, ReactNode } from 'react'
 
 export type TextProps = {
   children: ReactNode
-  size: keyof typeof fontSizes
+  size?: keyof typeof fontSizes
   as?: ElementType
 }
 
-export const Text = ({ children, size, as = 'p' }: TextProps) => {
+export const Text = ({ children, size = 'md', as = 'p' }: TextProps) => {
   return (
     <S.Text size={size} as={as}>
       {children}
