@@ -30,7 +30,7 @@
 	"Component Index": {
 		"prefix": "rfex",
 		"body": [
-			"export {} from './'",
+			"export * from './'",
 			"",
 		]
 	},
