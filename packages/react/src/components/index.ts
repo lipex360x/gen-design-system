@@ -1,5 +1,6 @@
 export * from './Avatar'
 export * from './Button'
+export * from './Checkbox'
 export * from './Container'
 export * from './Button'
 export * from './Heading'

@@ -2,7 +2,7 @@ import type { StoryObj, Meta } from '@storybook/react'
 import { Container, Text, TextArea } from '@gen-ui/react'
 
 export default {
-  title: 'TextArea',
+  title: 'Form/TextArea',
   component: TextArea,
   args: {},
   decorators: [
