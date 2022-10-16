@@ -15,6 +15,10 @@ const buttonSizes = {
   `,
 }
 
+// export const Wrapper = styled.div(({ theme }) => ({
+//   backgroundColor: theme.colors.ignite300,
+// }))
+
 export const Wrapper = styled.button<WrapperProps>`
   ${({ theme, size }) => css`
     font-family: ${theme.fonts.default};
