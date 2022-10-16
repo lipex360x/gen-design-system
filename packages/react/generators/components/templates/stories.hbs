@@ -1,13 +1,12 @@
 import type { StoryObj, Meta } from '@storybook/react'
-import { {{componentName}} } from '@gen-ui/react'
+import { {{componentName}}, {{componentName}}Props } from '@gen-ui/react'
 
 export default {
   title: '{{componentName}}',
   component: {{componentName}},
-
   args: {
     children: 'Hello {{componentName}}',
   },
 } as Meta
 
-export const Primary: StoryObj = {}
+export const Primary: StoryObj<{{componentName}}Props> = {}

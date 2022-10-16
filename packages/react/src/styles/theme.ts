@@ -8,7 +8,7 @@ import {
   space,
 } from '@gen-ui/tokens'
 
-export default {
+export const theme = {
   fonts,
   colors,
   fontSizes,
