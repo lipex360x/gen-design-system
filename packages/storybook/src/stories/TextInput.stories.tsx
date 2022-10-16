@@ -27,14 +27,14 @@ export const Primary: StoryObj<TextInputProps> = {
   },
 }
 
-export const Disabled: StoryObj<TextInputProps> = {
-  args: {
-    disabled: true,
-  },
-}
-
 export const WithPrefix: StoryObj<TextInputProps> = {
   args: {
     prefix: 'prefix/',
+  },
+}
+
+export const Disabled: StoryObj<TextInputProps> = {
+  args: {
+    disabled: true,
   },
 }

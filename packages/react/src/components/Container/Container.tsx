@@ -1,7 +1,5 @@
 import styled, { css } from 'styled-components'
 
-export type ContainerProps = {}
-
 export const Container = styled.div`
   ${({ theme }) => css`
     padding: ${theme.space[4]};
