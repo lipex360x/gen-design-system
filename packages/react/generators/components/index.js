@@ -18,15 +18,15 @@ module.exports = {
   actions: (data) => {
     const pathTemplate = "./components/templates";
     const componentPath = "../src/components/{{componentName}}";
+    const storyPath = "../../storybook/src/stories";
 
     const files = () => {
       const arrayFiles = [];
 
       arrayFiles.push(pushFiles(componentPath, "index.ts", "index.hbs"));
       arrayFiles.push(pushFiles(componentPath, "styles.ts", "styles.hbs"));
-      arrayFiles.push(
-        pushFiles(componentPath, "{{componentName}}.tsx", "component.hbs")
-      );
+      arrayFiles.push(pushFiles(componentPath, "{{componentName}}.tsx", "component.hbs"));
+      arrayFiles.push(pushFiles(storyPath, "{{componentName}}.stories.tsx", "stories.hbs"));
 
       return arrayFiles;
     };
