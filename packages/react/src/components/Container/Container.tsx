@@ -4,8 +4,9 @@ export type ContainerProps = {}
 
 export const Container = styled.div`
   ${({ theme }) => css`
-    width: 300px;
-    height: 300px;
-    background: ${theme.colors.ignite300};
+    padding: ${theme.space[4]};
+    border-radius: ${theme.radii.md};
+    background: ${theme.colors.gray800};
+    border: 1px solid ${theme.colors.gray600};
   `}
 `

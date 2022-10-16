@@ -8,7 +8,7 @@ export default {
   args: {
     children: (
       <>
-        <p>Hello Box</p>
+        <span>Hello Box</span>
       </>
     ),
   },
