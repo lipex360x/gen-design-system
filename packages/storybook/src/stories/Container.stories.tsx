@@ -7,6 +7,13 @@ export default {
   args: {
     children: <Text>This is a Container</Text>,
   },
+  argTypes: {
+    children: {
+      control: {
+        type: null,
+      },
+    },
+  },
 } as Meta
 
 export const Primary: StoryObj = {}

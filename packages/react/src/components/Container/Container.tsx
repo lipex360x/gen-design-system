@@ -8,3 +8,4 @@ export const Container = styled.div`
     border: 1px solid ${theme.colors.gray600};
   `}
 `
+Container.displayName = 'Container'

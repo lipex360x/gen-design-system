@@ -12,24 +12,26 @@ export default {
 } as Meta
 
 export const Default: StoryObj<ButtonProps> = {
+  args: {},
+
   argTypes: {
     variant: {
       control: {
-        type: 'select',
+        type: 'inline-radio',
         options: ['primary', 'secondary', 'tertiary'],
       },
     },
 
     size: {
       control: {
-        type: 'select',
+        type: 'inline-radio',
         options: ['sm', 'md'],
       },
     },
 
     disabled: {
       control: {
-        type: 'select',
+        type: 'boolean',
         options: [true, false],
       },
     },
@@ -39,12 +41,13 @@ export const Default: StoryObj<ButtonProps> = {
 export const Variants: StoryObj<ButtonProps> = {
   args: {
     variant: 'primary',
+    disabled: false,
   },
 
   argTypes: {
     variant: {
       control: {
-        type: 'select',
+        type: 'inline-radio',
         options: ['primary', 'secondary', 'tertiary'],
       },
     },
@@ -73,6 +76,14 @@ export const WithIcon: StoryObj<ButtonProps> = {
         <span>Next Step</span> <ArrowRight weight="bold" />
       </>
     ),
+  },
+
+  argTypes: {
+    children: {
+      control: {
+        type: null,
+      },
+    },
   },
 }
 

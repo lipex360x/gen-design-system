@@ -33,3 +33,5 @@ export const TextArea = styled.textarea`
     }
   `}
 `
+
+TextArea.displayName = 'TextArea'

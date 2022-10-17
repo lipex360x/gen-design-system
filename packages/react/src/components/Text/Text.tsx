@@ -15,3 +15,5 @@ export const Text = ({ children, size = 'md', as = 'p' }: TextProps) => {
     </S.Text>
   )
 }
+
+Text.displayName = 'Text'

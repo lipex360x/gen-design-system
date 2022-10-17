@@ -3,8 +3,8 @@ import { RefAttributes } from 'react'
 import * as S from './styles'
 
 export type AvatarProps = {
-  src?: 'string'
-  alt?: 'string'
+  src?: string
+  alt?: string
 } & RefAttributes<HTMLImageElement>
 
 export const Avatar = (props: AvatarProps) => {
