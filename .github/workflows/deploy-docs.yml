@@ -17,7 +17,7 @@ jobs:
         with:
           node-version: 16
 
-      - uses: actions/cache@v2
+      - uses: actions/cache@v3
         id: yarn-cache
         with:
           path: |
@@ -34,8 +34,8 @@ jobs:
       - name: Build
         run: yarn build
 
-      - name: Deploy Storybook
-        working-directory: ./packages/storybook
+      - name: Deploy storybook
+        working-directory: ./packages/docs
         run: yarn deploy-storybook -- --ci --existing-output-dir=storybook-static
         env:
           GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
