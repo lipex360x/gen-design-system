@@ -1,7 +1,8 @@
 {
   "name": "@lipex360-ui/eslint-config",
-  "version": "3.0.0",
+  "version": "1.0.0",
   "main": "index.js",
+  "private": true,
   "license": "MIT",
   "devDependencies": {
     "@rocketseat/eslint-config": "^1.1.3",

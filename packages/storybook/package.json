@@ -2,6 +2,7 @@
   "name": "@lipex360-ui/storybook",
   "version": "1.0.0",
   "main": "index.js",
+  "private": true,
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.19.3",
