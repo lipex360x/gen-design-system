@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react'
-import { Container, Text, TextArea } from '@gen-ui/react'
+import { Container, Text, TextArea } from '@lipex360-ui/react'
 
 export default {
   title: 'Form/TextArea',

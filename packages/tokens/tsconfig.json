@@ -1,4 +1,4 @@
 {
-  "extends": "@gen-ui/typescript/base.json",
+  "extends": "@lipex360-ui/typescript/base.json",
   "include": ["src"]
 }

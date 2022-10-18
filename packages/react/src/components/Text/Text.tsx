@@ -1,5 +1,5 @@
 import * as S from './styles'
-import { fontSizes } from '@gen-ui/tokens'
+import { fontSizes } from '@lipex360-ui/tokens'
 import { ElementType, ReactNode } from 'react'
 
 export type TextProps = {

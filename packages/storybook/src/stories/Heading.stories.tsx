@@ -1,6 +1,6 @@
 import type { StoryObj, Meta } from '@storybook/react'
 
-import { Heading } from '@gen-ui/react'
+import { Heading } from '@lipex360-ui/react'
 
 export default {
   title: 'Typography/Heading',

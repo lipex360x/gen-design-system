@@ -1,5 +1,5 @@
 {
-  "extends": "@gen-ui/eslint-config",
+  "extends": "@lipex360-ui/eslint-config",
 
   "rules": {
     "no-undef": "off"

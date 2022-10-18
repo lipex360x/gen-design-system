@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react'
-import { Checkbox, CheckboxProps, Container, Text } from '@gen-ui/react'
+import { Checkbox, CheckboxProps, Container, Text } from '@lipex360-ui/react'
 
 export default {
   title: 'Form/Checkbox',

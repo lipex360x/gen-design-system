@@ -1,7 +1,7 @@
 import type { StoryObj, Meta } from '@storybook/react'
 
-import { Text } from '@gen-ui/react'
-import { fontSizes } from '@gen-ui/tokens'
+import { Text } from '@lipex360-ui/react'
+import { fontSizes } from '@lipex360-ui/tokens'
 
 export default {
   title: 'Typography/Text',

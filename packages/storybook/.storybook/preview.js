@@ -1,6 +1,6 @@
 import { ThemeProvider } from 'styled-components'
 import { themes } from '@storybook/theming'
-import { theme } from '@gen-ui/react'
+import { theme } from '@lipex360-ui/react'
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },

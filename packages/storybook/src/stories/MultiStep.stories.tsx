@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react'
-import { Container, MultiStep, MultiStepProps } from '@gen-ui/react'
+import { Container, MultiStep, MultiStepProps } from '@lipex360-ui/react'
 
 export default {
   title: 'Form/MultiStep',

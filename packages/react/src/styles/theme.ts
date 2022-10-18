@@ -6,7 +6,7 @@ import {
   lineHeights,
   radii,
   space,
-} from '@gen-ui/tokens'
+} from '@lipex360-ui/tokens'
 
 export const theme = {
   fonts,

@@ -1,5 +1,5 @@
 import styled, { css, DefaultTheme } from 'styled-components'
-import { fontSizes } from '@gen-ui/tokens'
+import { fontSizes } from '@lipex360-ui/tokens'
 import { TextProps } from './Text'
 
 const setFontSize = {

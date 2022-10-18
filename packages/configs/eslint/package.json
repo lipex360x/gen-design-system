@@ -1,5 +1,5 @@
 {
-  "name": "@gen-ui/eslint-config",
+  "name": "@lipex360-ui/eslint-config",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",

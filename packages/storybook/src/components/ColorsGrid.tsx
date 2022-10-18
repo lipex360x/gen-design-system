@@ -1,5 +1,5 @@
 import { getContrast } from 'polished'
-import { colors } from '@gen-ui/tokens'
+import { colors } from '@lipex360-ui/tokens'
 
 export const ColorsGrid = () => {
   return Object.entries(colors).map(([key, color]) => {

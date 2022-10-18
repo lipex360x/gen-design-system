@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react'
-import { Container, TextInput, TextInputProps, Text } from '@gen-ui/react'
+import { Container, TextInput, TextInputProps, Text } from '@lipex360-ui/react'
 
 export default {
   title: 'Form/TextInput',

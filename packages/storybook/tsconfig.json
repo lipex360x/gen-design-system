@@ -1,4 +1,4 @@
 {
-  "extends": "@gen-ui/typescript/react.json",
+  "extends": "@lipex360-ui/typescript/react.json",
   "include": ["src"],
 }

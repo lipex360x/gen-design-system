@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react'
-import { Avatar, AvatarProps } from '@gen-ui/react'
+import { Avatar, AvatarProps } from '@lipex360-ui/react'
 
 export default {
   title: 'Data Display/Avatar',
@@ -9,7 +9,7 @@ export default {
 
 export const Primary: StoryObj<AvatarProps> = {
   args: {
-    src: 'https://avatars.dicebear.com/api/adventurer-neutral/%40gen-ui.svg',
+    src: 'https://avatars.dicebear.com/api/adventurer-neutral/%40lipex360-ui.svg',
     alt: 'Avatar Image',
   },
 }

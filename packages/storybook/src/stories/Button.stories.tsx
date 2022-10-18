@@ -1,5 +1,5 @@
 import type { StoryObj, Meta } from '@storybook/react'
-import { Button, ButtonProps } from '@gen-ui/react'
+import { Button, ButtonProps } from '@lipex360-ui/react'
 import { ArrowRight } from 'phosphor-react'
 
 export default {
